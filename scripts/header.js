@@ -58,4 +58,4 @@ async function carregarHeader() {
   }
 }
 
-carregarHeader();
+document.addEventListener("DOMContentLoaded", carregarHeader);
