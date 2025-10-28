@@ -27,6 +27,11 @@ async function cadastrar(event) {
           mensagem.textContent = "Cadastro realizado com sucesso!";
           mensagem.style.color = "green";
           console.log("Usuário cadastrado:", data.localId);
+
+          setTimeout(() => {
+            window.location.href = "login.html";
+          }, 2000);
+
         } else {
           mensagem.textContent = "Erro: " + data.mensagem;
           mensagem.style.color = "red";

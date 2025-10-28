@@ -1,16 +1,15 @@
 /*  IMPORTES */
 @import url("variaveis.css");
 
-
-h1{
-    text-align: center;
-}
-
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 25vw;
+}
+
+h1{
+    text-align: center;
 }
 
 label{

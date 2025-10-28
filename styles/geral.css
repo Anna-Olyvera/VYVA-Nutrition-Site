@@ -13,10 +13,7 @@
     margin: 0;
 }
 
-html, body{
-    height: 100%;
-}
-body {
+body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -24,7 +21,7 @@ body {
     background-color: var(--cor-preto-avermelhado);
 }
 
-main{
+body.padrao main{
     display: grid;
     justify-content: center;
     align-items: center;
@@ -36,6 +33,11 @@ main{
     background-color: black;
 }
 
+html, body{
+    height: 100%;
+}
+
+
 h1{
     color: var(--cor-verde-vyva);
 }
@@ -44,8 +46,13 @@ button{
     cursor: pointer;
 }
 
+.bannerInicial{
+    width: 100vw;
+    height: auto;
+}
+
 @media(max-width: 800px){
-    main{
+    body.padrao main{
         box-shadow: none;
         background-color: transparent;
     }
